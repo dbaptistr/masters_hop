@@ -1,0 +1,378 @@
+
+
+body {
+    /* padding-top:60px; */
+    margin: auto;
+    background-repeat: no-repeat;
+    /* background-image: url(hop-174.jpg); */
+}
+
+.bg {
+    /* The image used */
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: fixed;
+  }
+
+/* choose a light or dark theme to add to the body tag. */
+.normal-theme {
+    background-color: white;
+    color: #333333;   
+}
+
+.final-theme {
+    background-color: white;
+    color: #b3b3b3; 
+      
+}
+
+.light-theme {
+    background-image: url(hop-376.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25px 50px;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #666666;    
+}
+
+.dif-theme {
+    background-image: url('/hop-174.jpg');
+    color: #fcfbfb;
+}
+
+.container {
+        max-width: 950px;
+}
+
+/* ******** */
+
+.image {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+/*
+super-font
+.headline
+.kicker
+.subhead
+.label
+.label-text
+.credit
+
+sub-font
+.date
+.body-text
+.note
+*/
+
+.left {
+    position: absolute;
+    left: 1030px;
+    width: 300px;
+    height: 190px;
+  }
+
+.super-font {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.sub-font {
+    font-family: 'Lora', serif;
+}
+
+.top-left {
+    position: absolute;
+    top: 70%;
+    left: 20%;
+    /* transform: translate( -50%, -50% ); */
+    font-family: 'Abril Fatface', cursive;
+    letter-spacing: 0.2cm;
+    font-size: 70px;
+    font-weight: 300;
+    text-align: center;
+    color:#e6e6e6;
+  }
+
+  .lower-left {
+    position: absolute;
+    top: 95%;
+    left: 40%;
+    /* transform: translate( -50%, -50% ); */
+    font-family: 'Lora', serif;
+    /* letter-spacing: 0.3cm; */
+    font-size: 15px;
+    font-weight: 200;
+    text-align: center;
+    color: white;
+  }
+
+  .lower-lower-left {
+    position: absolute;
+    top: 100%;
+    left: 38%;
+    /* transform: translate( -50%, -50% ); */
+    font-family: 'Lora', serif;
+    /* letter-spacing: 0.3cm; */
+    font-size: 15px;
+    font-weight: 200;
+    text-align: center;
+    color: white;
+  }
+
+.headline {
+    font-size: 3.5rem;
+    line-height: 0.9;
+    margin-bottom: 0.25rem;
+    margin-top: 1rem;
+    font-weight: 700;
+    color:black
+}
+
+.body-text {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    margin-top: 1.5rem;
+
+}
+
+.kicker {
+    font-size: 1.5rem;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.credit  {
+    font-size: 1.2rem;
+    line-height: 0.75;
+    margin-top: 2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: grey;
+}
+
+.vidline  {
+  font-size: 3.2rem;
+  line-height: 1.5;
+  margin-top: 1rem;
+  font-weight: 400;
+  /* text-transform: uppercase; */
+  color: white;
+}
+
+.date {
+    font-size: 1rem;
+    line-height: 1;
+    margin-top: 0.25;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.subhead {
+    font-size: 2rem;
+    line-height: 0.9;
+    margin-bottom: 0.5rem;
+    margin-top: 1.5rem;
+    font-weight: 700;
+}
+
+.label {
+    font-size: 1.25rem;
+    line-height: 1.25;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.label-text {
+    font-size: 1.25rem;
+    line-height: 1.25;
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+}
+
+.note {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    margin-top: 0.5rem;
+    margin-bottom: 1.25rem;
+    font-weight: 400;
+}
+.caption  {
+    font-size: 1rem;
+    line-height: 1.2;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+
+.video-container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: hidden;
+  background-repeat: no-repeat;
+  
+}
+.video-container video {
+  /* Make video to at least 100% wide and tall */
+  min-width: 100%; 
+  min-height: 100%; 
+
+  /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+  width: auto;
+  height: auto;
+
+  /* Center the video */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.fullscreen-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+  background-repeat: no-repeat;
+}
+
+.fullscreen-bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    height: 300%;
+    top: -100%;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: 300%;
+    left: -100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .fullscreen-bg {
+    background: url('../img/videoframe.jpg') center center / cover no-repeat;
+  }
+
+  .fullscreen-bg__video {
+    display: none;
+  }
+}
+
+/* .video-container {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: hidden;
+  } */
+
+  /* .video-container video { */
+    /* Make video to at least 100% wide and tall */
+    /* min-width: 100%; 
+    min-height: 100%;  */
+    
+    /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+    /* width: auto;
+    height: auto; */
+    
+    /* Center the video */
+    /* position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); */
+  /* } */
+
+  /* .video-container {
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+    /* width: 800px;
+    height: 800px; */
+    /* object-fit: cover;
+  }
+
+  .video-container__video {
+    position: relative;
+    top: 50%;
+    left: 50%; */
+    /* width: 1920px;
+    height: 816px; */
+    /* width: auto;
+    height: auto; */
+    /* min-width: 100%;
+    min-height: 100%; */
+    /* object-fit: cover; */
+    /* -webkit-transform: translate(-50%, -50%);
+       -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+	    transform: translate(-50%, -50%);
+/* } 
+
+  /* .fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; */
+/* } */
+/* 
+@media (min-aspect-ratio: 16/9) {
+    .video-container__video {
+        height: 100%;
+        top: -50%;
+      }
+    }
+  
+  @media (max-aspect-ratio: 16/9) {
+    .video-container__video {
+        width: 100%;
+        left: -50%;
+      }
+    } */
+
+    /* @supports (object-fit: cover) {
+        .video-container__video {
+           top: 0; left: 0;
+           width: 100%; height: 100%;
+           object-fit: cover;
+        }
+     } */
